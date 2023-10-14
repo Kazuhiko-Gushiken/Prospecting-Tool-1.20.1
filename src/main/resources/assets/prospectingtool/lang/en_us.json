@@ -1,3 +1,10 @@
 {
-  "item.prospectingtools.ore_prospector": "Ore Prospector"
+  "item.prospectingtool.ore_prospector": "Ore Prospector",
+  "item.prospectingtool.stone_prospector": "Stone Prospector",
+  "item.prospectingtool.moss_prospector": "Moss Prospector",
+  "item.prospectingtool.pulsating_conductor": "Pulsating Conductor",
+
+  "tooltip.prospectingtool.ore_prospector": "Looks for Vanilla Ores.",
+  "tooltip.prospectingtool.stone_prospector": "Looks for stones (not stone itself).",
+  "tooltip.prospectingtool.moss_prospector": "Looks for common Lush Cave blocks."
 }

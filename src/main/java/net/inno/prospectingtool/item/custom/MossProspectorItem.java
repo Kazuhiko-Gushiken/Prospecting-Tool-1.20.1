@@ -17,8 +17,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class OreProspectorItem extends Item {
-    public OreProspectorItem(Settings settings) {
+public class MossProspectorItem extends Item {
+    public MossProspectorItem(Settings settings) {
         super(settings);
     }
 
@@ -41,7 +41,7 @@ public class OreProspectorItem extends Item {
 
             }
             if(!foundBlock) {
-                player.sendMessage(Text.literal("No valueables Found!"));
+                player.sendMessage(Text.literal("No lush found!"));
             }
         }
 
@@ -57,12 +57,12 @@ public class OreProspectorItem extends Item {
     }
 
     private boolean isValueableBlock(BlockState state) {
-        return state.isIn(ModTags.Blocks.ORE_PROSPECTING_ORES);
+        return state.isIn(ModTags.Blocks.MOSS_PROSPECTING);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.prospectingtool.ore_prospector").formatted(Formatting.GRAY).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("tooltip.prospectingtool.moss_prospector").formatted(Formatting.GRAY).formatted(Formatting.ITALIC));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

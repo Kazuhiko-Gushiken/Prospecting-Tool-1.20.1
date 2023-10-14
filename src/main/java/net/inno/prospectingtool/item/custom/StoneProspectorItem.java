@@ -3,6 +3,7 @@ package net.inno.prospectingtool.item.custom;
 import net.inno.prospectingtool.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -17,8 +18,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class OreProspectorItem extends Item {
-    public OreProspectorItem(Settings settings) {
+public class StoneProspectorItem extends Item {
+    public StoneProspectorItem(Settings settings) {
         super(settings);
     }
 
@@ -41,7 +42,7 @@ public class OreProspectorItem extends Item {
 
             }
             if(!foundBlock) {
-                player.sendMessage(Text.literal("No valueables Found!"));
+                player.sendMessage(Text.literal("No stones found!"));
             }
         }
 
@@ -57,12 +58,12 @@ public class OreProspectorItem extends Item {
     }
 
     private boolean isValueableBlock(BlockState state) {
-        return state.isIn(ModTags.Blocks.ORE_PROSPECTING_ORES);
+        return state.isIn(ModTags.Blocks.STONE_PROSPECTING_STONES);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.prospectingtool.ore_prospector").formatted(Formatting.GRAY).formatted(Formatting.ITALIC));
+        tooltip.add(Text.translatable("tooltip.prospectingtool.stone_prospector").formatted(Formatting.GRAY).formatted(Formatting.ITALIC));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

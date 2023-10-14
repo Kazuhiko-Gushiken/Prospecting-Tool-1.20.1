@@ -2,7 +2,6 @@ package net.inno.prospectingtool;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.inno.prospectingtool.datagen.ModModelProvider;
 import net.inno.prospectingtool.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

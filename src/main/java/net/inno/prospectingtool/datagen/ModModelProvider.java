@@ -22,5 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ORE_PROSPECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.PULSATING_CONDUCTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_PROSPECTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOSS_PROSPECTOR, Models.GENERATED);
     }
 }

@@ -33,5 +33,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ORE_PROSPECTOR)));
 
         offerBlasting(exporter, List.of(Items.COPPER_BLOCK), RecipeCategory.MISC, ModItems.PULSATING_CONDUCTOR, 10,600, String.valueOf(1));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STONE_PROSPECTOR, 1)
+                .pattern("ICI")
+                .pattern("IWI")
+                .pattern(" W ")
+                .input('I', Items.IRON_INGOT)
+                .input('C', ModItems.PULSATING_CONDUCTOR)
+                .input('W', ItemTags.LOGS)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.STONE_PROSPECTOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MOSS_PROSPECTOR, 1)
+                .pattern("VCV")
+                .pattern("IWI")
+                .pattern(" W ")
+                .input('V', Items.VINE)
+                .input('C', ModItems.PULSATING_CONDUCTOR)
+                .input('I', Items.IRON_INGOT)
+                .input('W', ItemTags.LOGS)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MOSS_PROSPECTOR)));
+
     }
 }

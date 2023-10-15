@@ -1,6 +1,6 @@
 # Prospecting-Tool-1.20.1
 
-<p>Currently there is only vanilla blocks that are detectable. I will add support for the following in due time:</p>
+<p>Currently the prospecting tools detect only vanilla ores, and a few moss related blocks. I will add support for ores from the following in due time:</p>
 <ul>
 <li>Modern Industrialization</li>
 <li>Create</li>
@@ -10,4 +10,4 @@
 <li>Industrial Revolution</li>
 <li>Mystical Agriculture</li>
 <br/>
-<i>Disclaimer: The textures used are not mine and belong to <a href="https://github.com/malcolmriley/unused-textures">Malcolmriley<a>.</i>
+<i>Disclaimer: The textures used are not mine and belong to <a href="https://github.com/malcolmriley/unused-textures">Malcolmriley<a>, who graciously provides them under a Creative Commons license.</i>
